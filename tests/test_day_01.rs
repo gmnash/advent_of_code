@@ -8,7 +8,7 @@ use advent_of_code::day_01;
 #[test]
 fn it_works() {
     let p = env::current_dir().unwrap();
-    let mut f = File::open(format!("{}/src/day_01_input.txt", p.display())).unwrap();
+    let mut f = File::open(format!("{}/inputs/day_01.txt", p.display())).unwrap();
     let mut s = String::new();
     f.read_to_string(&mut s).unwrap();
 
