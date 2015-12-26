@@ -1,7 +1,9 @@
+extern crate advent_of_code;
+
 use std::io::prelude::*;
 use std::fs::File;
 use std::env;
-extern crate advent_of_code;
+use advent_of_code::day_01;
 
 #[test]
 fn it_works() {
@@ -10,5 +12,5 @@ fn it_works() {
     let mut s = String::new();
     f.read_to_string(&mut s).unwrap();
 
-    assert_eq!(232, advent_of_code::calc_floor(&s));
+    assert_eq!(232, day_01::calc_floor(&s));
 }
